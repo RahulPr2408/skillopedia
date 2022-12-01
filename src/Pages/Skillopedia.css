@@ -1,0 +1,12 @@
+.skillopedia_conatoiner{
+    max-width: 100vw;
+    max-height: 100vh;
+    overflow: hidden;
+}
+
+.skillopedia_body{
+    display: grid;
+    grid-template-columns: 15vw 85vw;
+    height: 100%;
+    width: 100%;
+}
