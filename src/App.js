@@ -17,10 +17,12 @@ function App() {
           <Route path="/" element={<SignUpPage></SignUpPage>}></Route>
           <Route path='/login' element={<LoginPage />}></Route>
           <Route path='/forgotpassword' element={<ForgotPasswordPage />}></Route>
-          <Route path="/skillopedia" element={<Skillopedia />}></Route>
-          <Route path="/skillopedia/admindashboard" element={<AdminDashboard />}></Route>
-          <Route path="/skillopedia/adminpendingrequest" element={<AdminPendingRequest />}></Route>
-          <Route path="/skillopedia/profile" element={<Profile />}></Route>
+          <Route path="/skillopedia" element={<Skillopedia />}>
+            <Route path="/skillopedia/admindashboard" element={<AdminDashboard />}></Route>
+            <Route path="/skillopedia/adminpendingrequest" element={<AdminPendingRequest />}></Route>
+            <Route path="/skillopedia/profile" element={<Profile />}></Route>
+          </Route>
+
         </Routes>
       </Router>
     </div>

@@ -16,7 +16,7 @@ const Sidebar = () => {
                 <h3>SKILLOPEDIA</h3>
                 <ul>
                     <li onClick={showDashboard}><AiFillHome className='icons' /><Link to="/skillopedia/admindashboard">Dashboard</Link></li>
-                    <li onClick={showAdmin}><MdOutlineVerified className='icons' /><Link to="/skillopedia/admin">Admin</Link></li>
+                    <li onClick={showAdmin}><MdOutlineVerified className='icons' /><Link to="/skillopedia/adminpendingrequest">Admin</Link></li>
                     <li onClick={showProfile}><AiOutlineUser className='icons' /><Link to="/skillopedia/profile">Profile</Link></li>
                 </ul>
             </div>
