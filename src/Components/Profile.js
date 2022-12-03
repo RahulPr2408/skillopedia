@@ -4,7 +4,7 @@ import background from "../assests/background.jpg";
 import person from "../assests/person.jpg";
 import { AiOutlineEdit } from "react-icons/ai";
 
-const Profile = () => {
+const Profile = (props) => {
   return (
     <div className="profile_container">
       <div className="image">
@@ -50,7 +50,10 @@ const Profile = () => {
             </div>
             <div>
               <label htmlFor="experience">Experience</label>
-              <input type="text" name="experience" />
+              <div className="experience">
+                <input type="text" name="months" />
+                <input type="text" name="days" />
+              </div>
             </div>
             <div>
               <label htmlFor="github_link">GitHub Link</label>
